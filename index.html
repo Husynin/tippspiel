@@ -31,8 +31,8 @@ const supabase = createClient(supabaseUrl, supabaseKey);
       const name = document.getElementById("name").value; 
       const toreA = Number(document.getElementById("toreA").value); 
       const toreB = Number(document.getElementById("toreB").value); 
-      const nameA = Number(document.getElementById("nameA").value); 
-      const nameB = Number(document.getElementById("nameB").value); 
+      const nameA = document.getElementById("nameA").value; 
+      const nameB = document.getElementById("nameB").value; 
  
       const { error } = await supabase 
         .from("tipps") 
